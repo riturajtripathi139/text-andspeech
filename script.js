@@ -45,3 +45,12 @@ document.querySelector("#speak").addEventListener('click', speaks);
 document.querySelector("#Clear").addEventListener('click', () => {
     document.querySelector("#textarea").value = "";
 });
+// Adding copy button
+
+
+function copytext() {
+    passwordBox.select();
+    document.execCommand("copy");
+}
+
+document.querySelector("#copy").addEventListener("click", copytext);
