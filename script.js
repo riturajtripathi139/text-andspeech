@@ -47,10 +47,11 @@ document.querySelector("#Clear").addEventListener('click', () => {
 });
 // Adding copy button
 
+const textarea = document.getElementById("textarea");
 
 function copytext() {
-    passwordBox.select();
+    textarea.select();
     document.execCommand("copy");
 }
 
-document.querySelector("#copy").addEventListener("click", copytext);
+document.querySelector("#copytext").addEventListener("click", copytext);
